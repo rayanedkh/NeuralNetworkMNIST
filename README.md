@@ -1,6 +1,6 @@
 # RayaNN: a Neural Network for MNIST Digit Recognition from Scratch 
 
-This repository contains a custom-built Multi-Layer Perceptron (MLP) used to classify handwritten digits from the MNIST dataset. The goal is to demonstrate how to implement, train, save, and load a neural network from scratch using only fundamental Python libraries. It was a great introduction to machine learning, neural networks and computer vision.
+This repository contains a simple custom-built Multi-Layer Perceptron (MLP) used to classify handwritten digits from the MNIST dataset. The goal was to demonstrate how to implement, train, save, and load a neural network from scratch using only fundamental Python libraries. It was for me a great introduction to machine learning, neural networks and computer vision.
 
 ## 📋 Project Overview
 
