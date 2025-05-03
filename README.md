@@ -33,23 +33,6 @@ This repository contains a custom-built Multi-Layer Perceptron (MLP) used to cla
         └── test.csv
 
 ```
-
-## ⚙️ Installation
-
-1. Clone this repository:
-
-   ```bash
-   ```
-
-git clone \<repository\_url>
-cd Digit-Recognizer
-
-````
-2. Install dependencies (preferably in a virtual environment):
-   ```bash
-pip install numpy pandas scipy tqdm matplotlib
-````
-
 ## 🧩 How the Neural Network Works
 
 1. **Data Preprocessing**:
