@@ -26,7 +26,7 @@ A suite of MNIST digit‑recognition projects showcasing:
 
 ## 🧑‍💻 Notebooks & Code
 
-### 1. Scratch MLP (`RayaNN/`)  
+## 1️⃣ MLP From Scratch (`RayaNN/`)  
 **Goal**: Implement a 2-layer neural network from scratch (NumPy only) for MNIST classification.  
 
 **Key Features**:  
