@@ -40,18 +40,7 @@ A suite of MNIST digit‑recognition projects showcasing:
   - Learning rate scheduling (`lr=1e-3`)  
 - **Results**:  
   - Model saving/loading via `.npz`  
-  - ~90% dev accuracy  
-
-**Technical Highlights**:  
-- Pure NumPy implementation (no DL frameworks)  
-- Hand-crafted gradient calculations  
-- Efficient matrix operations (no loops in forward pass)  
-- LogSoftmax with `logsumexp` for numerical stability  
-
-**Skills Demonstrated**:  
-- Deep understanding of backpropagation  
-- Neural network architecture design  
-- Debugging without autograd  
+  - ~93% dev accuracy  
 
 
 
