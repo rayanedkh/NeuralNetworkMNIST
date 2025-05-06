@@ -26,7 +26,7 @@ A suite of MNIST digit‑recognition projects showcasing:
 
 ## 🧑‍💻 Notebooks & Code
 
-### 1. Scratch MLP (`RayaNN/`)
+## 1. Scratch MLP (`RayaNN/`)
 - **Goal**  
   Build, train, save and load a two‑layer perceptron for MNIST with NumPy.
 - **Key points**  
@@ -34,7 +34,9 @@ A suite of MNIST digit‑recognition projects showcasing:
   - Softmax + cross‑entropy  
   - Batch updates  
 
-### 2. Custom Optimization Loop (`Optimization_MNIST_Dakhlaoui.ipynb`)  
+
+
+## 2. Custom Optimization Loop (`Optimization_MNIST_Dakhlaoui.ipynb`)  
 
 **Goal**: Implement manual SGD with `tf.GradientTape` on MNIST and analyze hyperparameters.  
 
@@ -47,7 +49,9 @@ A suite of MNIST digit‑recognition projects showcasing:
 
 **Skills**: TensorFlow autodiff, optimization debugging, hyperparameter tuning.  
 
-### 3. Autoencoders (`Autoencoder_NN_Dakhlaoui.ipynb`)  
+
+
+## 3. Autoencoders (`Autoencoder_NN_Dakhlaoui.ipynb`)  
 
 **Goal**: Compare PCA with neural autoencoders and implement denoising on MNIST.  
 
