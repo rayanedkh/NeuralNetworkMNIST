@@ -12,14 +12,14 @@ A suite of MNIST digit‑recognition projects showcasing:
 ```bash
 .
 ├── README.md
-├── save_model.npz                  # Weights from the scratch MLP after training
-├── RayaNN/                         # Pure‑Python scratch MLP implementation
-│   ├── rayane_nn.py
-│   └── main.py
-├── Autoencoder_NN_DAKHLAOUI.ipynb  # Keras autoencoder lab: PCA comparison, deep & denoising AEs
-└── Optimization_MNIST_Dakhlaoui.ipynb  
-                                   # Custom training loop lab: gradient‑tape, SGD, LR experiments
+├── RayaNN/                        # Pure‑Python scratch MLP implementation
+    ├── save_model.npz                 # Weights from the scratch MLP after training
+│   ├── rayane_nn.py                   # Training script
+│   └── main.py                        # Used to test the model visually    
+├── Autoencoder_NN_DAKHLAOUI.ipynb # Keras autoencoder lab: PCA comparison, deep & denoising AEs
+└── Optimization_MNIST_Dakhlaoui.ipynb  # Custom training loop lab: gradient‑tape, SGD, LR experiments
 
+                                   
 
 
 ```
