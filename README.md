@@ -1,61 +1,59 @@
-# RayaNN: a Neural Network for MNIST Digit Recognition from Scratch
+# NeuralNetworkMNIST Experiments
 
-This repository contains a simple Multi-Layer Perceptron (MLP) used to classify handwritten digits from the MNIST dataset. The goal was to implement, train, save, and load a neural network from scratch using only fundamental Python libraries.
-
-## 📋 Project Overview
-
-* **Objective**: Build and train a neural network from scratch to predict digits (0–9) from MNIST grayscale images (28×28 pixels).
-* **Dataset**: MNIST training set (`data_set/train.csv`, 42,000 samples) and test set (`data_set/test.csv`).
-* **Model**: Two-layer MLP with ReLU activation and LogSoftmax output for numerical stability.
-* **Training**: Gradient descent for 5,000 epochs with batch size 100.
-
-## 🚀 Technologies & Dependencies
-* **Programming Language**: Python
-
-* **Core Libraries**:
-
-  * `numpy` (array operations & saving/loading weights)
-  * `pandas` (data handling)
-  * `scipy.special.logsumexp` (stable softmax implementation)
-  * `tqdm` (training progress bar)
-  * `matplotlib` (visualizing predictions)
-
-## 📂 Project Structure
-
-```bash
-├── README.md                  # Project documentation (this file)
-├── save_model.npz             # Binary file with learned weights (generated after training)
-└── RayaNN/        
-    ├── rayane_nn.py           # Training script
-    ├── main.py                # Used to test the model visually           
-    └── data_set/              # CSV files for training and test data
-        ├── train.csv
-        └── test.csv
-
-```
-## 🧩 How the Neural Network Works
-
-1. **Data Preprocessing**:
-
-   * Load CSV, shuffle, normalize pixel values to `[0,1]`, split into training and dev sets.
-2. **Model Architecture**:
-
-   * **Layer 1**: Fully-connected (784→10) + ReLU.
-   * **Layer 2**: Fully-connected (10→10) + LogSoftmax.
-3. **Training Loop**:
-
-   * Trained the model for 5,000 epochs with a batch size of 100.
-   * Used a **loss function** and an **optimization function** implementing the **steepest descent** algorithm.
-4. **Saving & Loading**:
-
-   * Weights are saved in `save_model.npz` via `numpy.savez`.
-   * Inference script loads `.npz`, rebuilds the model, and predicts a random test image.
-
-## 📊 Results
-
-* **Development accuracy**: \~92–93% after 5,000 epochs.
-* **Inference**: Visual display of a randomly selected test image with predicted digit.
+A small suite of MNIST digit‑recognition projects showcasing:
+1. A from‑scratch MLP in pure NumPy  
+2. A custom SGD training/optimization loop in TensorFlow/Keras  
+3. Various autoencoder architectures (linear, deep, denoising) in Keras
 
 ---
 
-*Feel free to explore, modify the architecture, or extend to deeper networks!*
+## 📂 Repository Structure
+
+```bash
+.
+├── README.md
+├── save_model.npz                  # Weights from the scratch MLP after training
+├── RayaNN/                         # Pure‑Python scratch MLP implementation
+│   ├── rayane_nn.py
+│   └── main.py
+├── Autoencoder_NN_DAKHLAOUI.ipynb  # Keras autoencoder lab: PCA comparison, deep & denoising AEs
+└── Optimization_MNIST_Dakhlaoui.ipynb  
+                                   # Custom training loop lab: gradient‑tape, SGD, LR experiments
+## 🧑‍💻 Notebooks & Code
+
+### 1. Scratch MLP (`RayaNN/`)
+- **Goal**  
+  Build, train, save and load a two‑layer perceptron for MNIST with NumPy.
+- **Key points**  
+  - Forward/backward passes  
+  - Softmax + cross‑entropy  
+  - Batch updates  
+
+### 2. Custom Optimization Loop (`Optimization_MNIST_Dakhlaoui.ipynb`)  
+
+**Goal**: Implement manual SGD with `tf.GradientTape` on MNIST and analyze hyperparameters.  
+
+**Key Points**:  
+- Gradient computation via `GradientTape`  
+- Custom weight updates (`update_weights()` function)  
+- Loss/accuracy tracking (train/test sets)  
+- Experiments: Learning rates (0.1, 0.01, 0.001), batch sizes, epochs  
+- Results: ~90% test accuracy, convergence analysis  
+
+**Skills**: TensorFlow autodiff, optimization debugging, hyperparameter tuning.  
+
+### 3. Autoencoders (`Autoencoder_NN_Dakhlaoui.ipynb`)  
+
+**Goal**: Compare PCA with neural autoencoders and implement denoising on MNIST.  
+
+**Key Points**:  
+- **PCA vs Linear AE**:  
+  - 2D latent space visualization  
+  - Variance comparison (PCA: ~16.8% vs AE reconstruction)  
+- **Deep Autoencoder**:  
+  - Non-linear architecture (512 → 256 → 128 units)  
+  - Improved reconstruction quality  
+- **Denoising AE**:  
+  - Noise injection (factor=0.4)  
+  - Multi-layer encoder/decoder with ReLU  
+- **Metrics**: MSE loss, visual reconstruction analysis   
