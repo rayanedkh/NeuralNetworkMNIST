@@ -1,6 +1,6 @@
-# NeuralNetworkMNIST Experiments
+# NeuralNetworkMNIST 
 
-A small suite of MNIST digit‑recognition projects showcasing:
+A suite of MNIST digit‑recognition projects showcasing:
 1. A from‑scratch MLP in pure NumPy  
 2. A custom SGD training/optimization loop in TensorFlow/Keras  
 3. Various autoencoder architectures (linear, deep, denoising) in Keras
