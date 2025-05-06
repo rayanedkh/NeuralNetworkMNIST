@@ -19,6 +19,11 @@ A small suite of MNIST digit‑recognition projects showcasing:
 ├── Autoencoder_NN_DAKHLAOUI.ipynb  # Keras autoencoder lab: PCA comparison, deep & denoising AEs
 └── Optimization_MNIST_Dakhlaoui.ipynb  
                                    # Custom training loop lab: gradient‑tape, SGD, LR experiments
+
+
+
+```
+
 ## 🧑‍💻 Notebooks & Code
 
 ### 1. Scratch MLP (`RayaNN/`)
