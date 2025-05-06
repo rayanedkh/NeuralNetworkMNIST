@@ -44,7 +44,7 @@ A suite of MNIST digit‑recognition projects showcasing:
 
 
 
-## 2️⃣ Custom Optimization Loop (`Optimization_MNIST_Dakhlaoui.ipynb`)  
+## 2️⃣ Custom Optimization Loop (`Optimization_MNIST_Dakhlaoui.ipynb/`)  
 
 **Goal**: Implement manual SGD with `tf.GradientTape` on MNIST and analyze hyperparameters.  
 
@@ -59,7 +59,7 @@ A suite of MNIST digit‑recognition projects showcasing:
 
 
 
-## 3️⃣ Autoencoders (`Autoencoder_NN_Dakhlaoui.ipynb`)  
+## 3️⃣ Autoencoders (`Autoencoder_NN_Dakhlaoui.ipynb/`)  
 
 **Goal**: Compare PCA with neural autoencoders and implement denoising on MNIST.  
 
