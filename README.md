@@ -26,13 +26,32 @@ A suite of MNIST digit‑recognition projects showcasing:
 
 ## 🧑‍💻 Notebooks & Code
 
-## 1️⃣ NN from scratch (`RayaNN/`)
-- **Goal**  
-  Build, train, save and load a two‑layer perceptron for MNIST with NumPy.
-- **Key points**  
-  - Forward/backward passes  
-  - Softmax + cross‑entropy  
-  - Batch updates  
+### 1. Scratch MLP (`RayaNN/`)  
+**Goal**: Implement a 2-layer neural network from scratch (NumPy only) for MNIST classification.  
+
+**Key Features**:  
+- **Custom Layers**:  
+  - `MLP` (Linear) with forward/backward passes  
+  - `ReLU` activation  
+  - `LogSoftmax` + `NLLLoss` (numerically stable)  
+- **Training Core**:  
+  - Batch gradient descent (`batch_size=100`)  
+  - Manual backpropagation chain  
+  - Learning rate scheduling (`lr=1e-3`)  
+- **Results**:  
+  - Model saving/loading via `.npz`  
+  - ~90% dev accuracy  
+
+**Technical Highlights**:  
+- Pure NumPy implementation (no DL frameworks)  
+- Hand-crafted gradient calculations  
+- Efficient matrix operations (no loops in forward pass)  
+- LogSoftmax with `logsumexp` for numerical stability  
+
+**Skills Demonstrated**:  
+- Deep understanding of backpropagation  
+- Neural network architecture design  
+- Debugging without autograd  
 
 
 
