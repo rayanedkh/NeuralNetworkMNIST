@@ -1,4 +1,4 @@
-# NeuralNetworkMNIST 
+# Neural Network from scratch for Computer Vision
 
 A suite of MNIST digit‑recognition projects showcasing:
 1. A from‑scratch MLP in pure NumPy  
